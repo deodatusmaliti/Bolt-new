@@ -17,7 +17,7 @@ import { CONTACT } from '@/lib/contact';
 export default function About({ navigate }: { navigate: (r: Route) => void }) {
   const stats = [
     { value: '15+', label: 'Years guiding' },
-    { value: '9,400+', label: 'Happy travelers' },
+    { value: '10,400+', label: 'Happy travelers' },
     { value: '22', label: 'Parks visited' },
     { value: '40+', label: 'Countries served' },
   ];
