@@ -10,6 +10,7 @@ export type Route =
   | { name: 'booking'; ref?: string }
   | { name: 'payment'; ref: string }
   | { name: 'gallery' }
+  | { name: 'safari-info' }
   | { name: 'about' }
   | { name: 'contact' };
 
@@ -34,6 +35,8 @@ function parse(hash: string): Route {
     }
     case 'gallery':
       return { name: 'gallery' };
+    case 'safari-info':
+      return { name: 'safari-info' };
     case 'about':
       return { name: 'about' };
     case 'contact':
@@ -63,6 +66,8 @@ export function toHash(route: Route): string {
       return `#/payment?ref=${route.ref}`;
     case 'gallery':
       return '#/gallery';
+    case 'safari-info':
+      return '#/safari-info';
     case 'about':
       return '#/about';
     case 'contact':

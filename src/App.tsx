@@ -11,6 +11,7 @@ import Customize from '@/pages/Customize';
 import Booking from '@/pages/Booking';
 import Payment from '@/pages/Payment';
 import Gallery from '@/pages/Gallery';
+import SafariInfo from '@/pages/SafariInfo';
 import About from '@/pages/About';
 import Contact from '@/pages/Contact';
 
@@ -31,6 +32,7 @@ function App() {
           {route.name === 'booking' && <Booking refParam={route.ref} navigate={navigate} />}
           {route.name === 'payment' && <Payment ref={route.ref} navigate={navigate} />}
           {route.name === 'gallery' && <Gallery navigate={navigate} />}
+          {route.name === 'safari-info' && <SafariInfo navigate={navigate} />}
           {route.name === 'about' && <About navigate={navigate} />}
           {route.name === 'contact' && <Contact navigate={navigate} />}
         </main>

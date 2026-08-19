@@ -9,6 +9,7 @@ const links: { label: string; route: Route }[] = [
   { label: 'Packages', route: { name: 'packages' } },
   { label: 'Customize', route: { name: 'customize' } },
   { label: 'Gallery', route: { name: 'gallery' } },
+  { label: 'Safari Info', route: { name: 'safari-info' } },
   { label: 'About', route: { name: 'about' } },
   { label: 'Contact', route: { name: 'contact' } },
 ];
